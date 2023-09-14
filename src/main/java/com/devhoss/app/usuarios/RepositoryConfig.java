@@ -8,7 +8,7 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import com.devhoss.app.usuarios.models.Role;
 import com.devhoss.app.usuarios.models.Usuario;
 
-//@Configuration
+@Configuration
 public class RepositoryConfig implements RepositoryRestConfigurer{
 
 	@Override
