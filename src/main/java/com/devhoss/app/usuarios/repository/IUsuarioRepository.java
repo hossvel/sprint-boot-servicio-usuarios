@@ -9,7 +9,7 @@ import org.springframework.data.rest.core.annotation.RestResource;
 import com.devhoss.app.usuarios.models.Usuario;
 
 
-@RepositoryRestResource(path="usuarios")
+@RepositoryRestResource(path="usuarios", collectionResourceRel = "usuarios")
 public interface IUsuarioRepository extends PagingAndSortingRepository<Usuario, Long>{
 
 	@RestResource(path="buscar-username")
@@ -17,4 +17,11 @@ public interface IUsuarioRepository extends PagingAndSortingRepository<Usuario, 
 	
 	@Query("select u from Usuario u where u.username=?1")
 	public Usuario obtenerPorUsername(String username);
+	
+
+	 @RestResource
+	 Usuario findById(Long aLong);
+	 
+	 @RestResource
+	 Usuario save(Usuario u);
 }
