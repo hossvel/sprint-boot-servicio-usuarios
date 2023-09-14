@@ -7,7 +7,6 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 
 @SpringBootApplication
-@EntityScan({"com.devhoss.app.usuarioscommons.models.entity"})
 public class SprintBootServicioUsuariosApplication {
 
 	public static void main(String[] args) {

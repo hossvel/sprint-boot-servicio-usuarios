@@ -56,11 +56,7 @@
 			<artifactId>spring-boot-starter-data-rest</artifactId>
 		</dependency>
 		
-	<dependency>
-		<groupId>com.devhoss.app.usuarios-commons</groupId>
-		<artifactId>sprint-boot-servicio-usuarios-commons</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-	</dependency>
+
 		
 	</dependencies>
 	<dependencyManagement>
